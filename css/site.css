@@ -1,5 +1,5 @@
 /* ygdra.ai · site v1.1 · tokens from the Ygdra design system (six core hexes never move)
-   One accent element per page (README "The accent rule"): the device node on the two lander pages,
+   One accent element per page (README "The accent rule"): the device F bucket on the two lander pages,
    the level-3 door node on /levels/, the title-block version word elsewhere. */
 @font-face{font-family:"Archivo";src:url(/fonts/Archivo-400-700.woff2) format("woff2");font-weight:400 700;font-stretch:62% 125%;font-display:swap}
 @font-face{font-family:"Instrument Serif";src:url(/fonts/InstrumentSerif-400.woff2) format("woff2");font-weight:400;font-display:swap}
@@ -83,7 +83,7 @@ a:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:
 .acc{color:var(--accent-ink)}
 
 /* hero (lander pages) */
-.hero{padding:32px 0 96px}
+.hero{padding:32px 0 56px}
 .hero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;align-items:end;margin-top:72px}
 .lead{font-family:var(--serif);font-weight:400;font-size:clamp(52px,6.4vw,80px);line-height:1.05;letter-spacing:-.01em;margin:0}
 .promise{font-size:24px;line-height:32px;font-weight:500;margin:20px 0 0}
@@ -92,8 +92,16 @@ a:focus-visible{outline:2px solid var(--focus);outline-offset:2px;border-radius:
 .story{font-size:20px;line-height:30px;margin:0;max-width:36rem}
 .story span{display:block}
 .story span+span{margin-top:8px}
-.hero-fig{margin:0;justify-self:end;width:100%;max-width:432px}
-.hero-fig img{display:block;width:100%;height:auto}
+.hero-story .rule{margin-top:0}
+
+/* device F strip (lander pages): birch above the ±0.00 datum, hatched fjord ground below; the bucket is the page's one accent.
+   The ground continues into the fjord argument band. Raster source 2400x480 (device at 1:1 in the middle). */
+.device-strip{margin:0;position:relative;height:480px;overflow:hidden;
+  background:linear-gradient(to bottom,#eeebe3 0,#eeebe3 250px,#15140f 250px,#15140f 253px,#1e3a44 253px)}
+.device-strip img{position:absolute;left:50%;top:0;width:2400px;height:480px;max-width:none;transform:translateX(-50%)}
+.device-strip .wrap{position:relative;height:100%}
+.datum{position:absolute;left:var(--gutter);top:232px;font:400 11px/14px var(--mono);letter-spacing:.04em;color:#8b8982}
+.device-strip+.band{margin-top:0}
 
 /* section header row: mono number + mono name on a hairline */
 .sec-head{display:flex;gap:16px;align-items:baseline;border-top:1px solid var(--line);padding-top:12px;margin:0 0 40px}
@@ -220,7 +228,9 @@ table.compare{width:100%;border-collapse:collapse;font-size:16px;line-height:24p
 /* narrow screens */
 @media (max-width:900px){
   .hero-grid{grid-template-columns:minmax(0,1fr);gap:40px;margin-top:48px}
-  .hero-fig{justify-self:start;max-width:360px}
+  .device-strip{height:400px;background:linear-gradient(to bottom,#eeebe3 0,#eeebe3 208px,#15140f 208px,#15140f 211px,#1e3a44 211px)}
+  .device-strip img{width:2000px;height:400px;transform:translateX(calc(-50% + 67px))}
+  .datum{top:192px}
   .sec{grid-template-columns:minmax(0,1fr);gap:8px;padding:24px 0 48px}
   .sec-meta{flex-direction:row;align-items:center}
   .sec-meta .no{padding-top:0}
@@ -252,7 +262,10 @@ table.compare{width:100%;border-collapse:collapse;font-size:16px;line-height:24p
   .tb>.tb-title{display:none}
   .tb>span{padding:8px 10px}
   .tb>span:nth-child(3){border-left:1px solid var(--line)}
-  .hero{padding-bottom:64px}
+  .hero{padding-bottom:40px}
+  .device-strip{height:300px;background:linear-gradient(to bottom,#eeebe3 0,#eeebe3 156px,#15140f 156px,#15140f 158px,#1e3a44 158px)}
+  .device-strip img{width:1500px;height:300px;transform:translateX(calc(-50% + 50px))}
+  .datum{top:138px}
   .lead{font-size:52px}
   .promise{font-size:22px;line-height:30px}
   .story{font-size:18px;line-height:27px}
