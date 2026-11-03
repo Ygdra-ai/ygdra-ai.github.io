@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A quality system already knows how to govern agents · Ygdra</title>
+<meta name="description" content="Authority earned on evidence and withdrawn on failure is old quality practice: switching rules in acceptance sampling, and certifying-staff authorisation in aircraft maintenance. The same rules fit AI agents.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="preload" href="/fonts/Archivo-400-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/InstrumentSerif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="/"><picture><source srcset="/img/ygdra-lockup-horizontal-one-colour-birch.svg" media="(prefers-color-scheme: dark)"><img src="/img/ygdra-lockup-horizontal-one-colour-tar.svg" alt="Ygdra, home" width="120" height="40"></picture></a>
+  <nav class="nav" aria-label="Main"><ul>
+    <li><a href="/context-sovereignty/">Context sovereignty</a></li>
+    <li><a href="/levels/">Levels</a></li>
+    <li><a href="/glossary/">Glossary</a></li>
+    <li><a href="/questions/">Questions</a></li>
+    <li><a href="/notes/" aria-current="page">Notes</a></li>
+    <li><a href="/about/">About</a></li>
+    <li class="lang"><a href="/fi/" lang="fi" hreflang="fi" aria-label="Suomeksi">FI</a></li>
+  </ul></nav>
+</div></header>
+
+<main id="main" class="doc article"><div class="wrap">
+  <header class="doc-head">
+    <p class="tb"><span>YGD · NOTE-01</span><span class="tb-title" aria-hidden="true">A quality system already knows how to govern agents</span><span class="acc">Web v1.1</span><span>2026-11-03</span></p>
+    <h1 class="doc-title">A quality system already knows how to govern agents</h1>
+    <p class="meta byline">N-01 · Founder · Ygdra · 3 November 2026</p>
+    <p class="standfirst">How far to trust an AI agent is not a new question. Quality practice answered it long ago, for inspection and for the people who sign aircraft back into service: authority is earned on evidence and withdrawn on failure.</p>
+  </header>
+
+  <section class="sec" aria-labelledby="h-switch">
+    <div class="sec-meta"><span class="no">01</span></div>
+    <div class="body">
+      <h2 id="h-switch">Inspection that switches on evidence</h2>
+      <p>Acceptance sampling decides whether to accept a lot without inspecting every item in it. ISO&nbsp;2859-1, the standard scheme for inspection by attributes, does not fix how hard to look. It switches between normal, tightened and reduced inspection, and the rules for switching are set before the first lot arrives.<a class="ref" href="#src-1" aria-label="Source 1">[1]</a></p>
+      <table class="rules-table">
+        <caption class="label">Switching rules, ISO 2859-1:1999 <a class="ref" href="#src-2" aria-label="Source 2">[2]</a> <a class="ref" href="#src-3" aria-label="Source 3">[3]</a></caption>
+        <thead><tr><th scope="col">From</th><th scope="col">To</th><th scope="col">When</th></tr></thead>
+        <tbody>
+          <tr><td class="st">Normal</td><td class="st">Tightened</td><td>2 lots not accepted within 5 or fewer consecutive lots</td></tr>
+          <tr><td class="st">Tightened</td><td class="st">Normal</td><td>5 consecutive lots accepted</td></tr>
+          <tr><td class="st">Normal</td><td class="st">Reduced</td><td>A switching score of at least 30, production at a steady rate, and the responsible authority considers it desirable</td></tr>
+          <tr><td class="st">Reduced</td><td class="st">Normal</td><td>1 lot not accepted, or production irregular or delayed</td></tr>
+          <tr><td class="st">Tightened</td><td class="st">Stopped</td><td>5 lots not accepted while on tightened inspection</td></tr>
+        </tbody>
+      </table>
+      <p>Relaxation is earned slowly and lost at once. A run of good lots, steady production and a responsible person’s decision buy reduced inspection; a single rejected lot ends it. Bad evidence tightens the regime without anyone having to argue for it.</p>
+      <p>I learned these rules in a university quality-management laboratory at the end of the 1990s. The standard was revised in January 2026; switching is still at its centre.</p>
+    </div>
+  </section>
+  <section class="sec" aria-labelledby="h-part145">
+    <div class="sec-meta"><span class="no">02</span></div>
+    <div class="body">
+      <h2 id="h-part145">Authority that is personal, limited and withdrawable</h2>
+      <p>Aircraft maintenance applies the same idea to people. Under Part-145, the European rules for approved maintenance organisations, a certificate of release to service is signed by certifying staff who hold a certification authorisation issued by the organisation.<a class="ref" href="#src-4" aria-label="Source 4">[4]</a> The organisation assesses each person before it issues one, and the authorisation must clearly specify its scope and limits.</p>
+      <p>It stays valid only while the person keeps meeting the conditions: recent hands-on experience, continuation training, an understanding of the aircraft and procedures in question. The organisation keeps a record of every certifying person and the scope of each authorisation, and a nominated person can issue or revoke one under a written procedure.</p>
+      <p>Authority there is individual, scoped, recorded and withdrawable. Nobody is trusted in general.</p>
+    </div>
+  </section>
+  <section class="sec" aria-labelledby="h-agents">
+    <div class="sec-meta"><span class="no">03</span></div>
+    <div class="body">
+      <h2 id="h-agents">The same rules for agents</h2>
+      <p>Neither practice needs to be invented again for AI agents. It needs to be applied.</p>
+      <ul>
+        <li>A person gives an agent a decision right for one class of decision, not for everything.</li>
+        <li>The right is granted on evidence: the agent’s own record on that class of decision.</li>
+        <li>The grant is recorded: who gave it, for which class, on what evidence.</li>
+        <li>It expires, and is renewed on fresh evidence, not by default.</li>
+        <li>It is withdrawn on failure, the way rejected lots tighten inspection.</li>
+      </ul>
+      <p>And as in a maintenance organisation, a person answers for every release. Agents can take on more of the work; answering for it stays with people.</p>
+      <p>None of this needs a new theory of trust. Quality systems have governed inspection, suppliers and certifying staff this way for decades. The work now is to write the same rules down, per class of decision, where people and agents both read them.</p>
+    </div>
+  </section>
+  <section class="sec" aria-labelledby="h-sources">
+    <div class="sec-meta"><span class="no">04</span></div>
+    <div class="body">
+      <h2 id="h-sources">Sources</h2>
+      <ol class="sources">
+        <li id="src-1"><span class="no">[1]</span><span>ISO 2859-1:2026, <em>Sampling procedures for inspection by attributes — Part 1: Sampling schemes indexed by acceptance quality limit (AQL) for lot-by-lot inspection</em>, third edition, January 2026. <a href="https://www.iso.org/standard/85464.html" rel="noopener">iso.org/standard/85464</a></span></li>
+        <li id="src-2"><span class="no">[2]</span><span>Switching rules (ISO 2859-1). SQC Online. <a href="https://www.sqconline.com/switching-rules-iso-2859-1" rel="noopener">sqconline.com/switching-rules-iso-2859-1</a></span></li>
+        <li id="src-3"><span class="no">[3]</span><span>Inspecting less samples (quotes the switching rules of ISO 2859-1:1999). QualityInspection.org. <a href="https://qualityinspection.org/inspecting-less-samples" rel="noopener">qualityinspection.org/inspecting-less-samples</a></span></li>
+        <li id="src-4"><span class="no">[4]</span><span>Regulation (EU) No 1321/2014 on continuing airworthiness, Annex II (Part-145), point 145.A.35 “Certifying staff and support staff”, points (a), (f), (g), (i), (j). Consolidated text, EASA. <a href="https://www.easa.europa.eu/sites/default/files/dfu/Consolidated_Regulation_(EU)No1321-2014_on_Continuing_Airworthiness.pdf" rel="noopener">easa.europa.eu, consolidated regulation (PDF)</a></span></li>
+      </ol>
+      <p class="more"><a href="/notes/">All notes</a></p>
+    </div>
+  </section>
+</div></main>
+
+<footer class="site-foot"><div class="wrap">
+  <span><a href="mailto:hello@ygdra.ai">hello@ygdra.ai</a></span>
+  <span>This site sets no cookies and runs no analytics.</span>
+  <span>© 2026 Ygdra</span>
+</div></footer>
+</body>
+</html>
