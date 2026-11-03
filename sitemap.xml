@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ygdra.ai/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ygdra.ai/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://ygdra.ai/fi/"/>
+  </url>
+  <url>
+    <loc>https://ygdra.ai/fi/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ygdra.ai/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://ygdra.ai/fi/"/>
+  </url>
+  <url>
+    <loc>https://ygdra.ai/context-sovereignty/</loc>
+    <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://ygdra.ai/levels/</loc>
+    <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://ygdra.ai/glossary/</loc>
+    <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://ygdra.ai/questions/</loc>
+    <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://ygdra.ai/notes/</loc>
+    <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://ygdra.ai/notes/quality-systems-govern-agents/</loc>
+    <lastmod>2026-11-03</lastmod>
+  </url>
+  <url>
+    <loc>https://ygdra.ai/about/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ygdra.ai/about/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://ygdra.ai/fi/tietoa/"/>
+  </url>
+  <url>
+    <loc>https://ygdra.ai/fi/tietoa/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ygdra.ai/about/"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://ygdra.ai/fi/tietoa/"/>
+  </url>
+</urlset>
